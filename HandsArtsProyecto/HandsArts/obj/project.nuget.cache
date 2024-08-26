@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+6lHqanG8R+MV7f7eR+cR+L2T8/UeLjBYCSS1iGYiL2YKZ6R4Q5JnkqLLevOmsLD48SRaBK63w2Y59BHKDqd4Q==",
+  "dgSpecHash": "UbHgWiC/5K2pNZVyYjcuNTw5AwE6NW3hswVkFcy99eFS+vBaR9IvY9qXvcFfOGYxCQfY3AxcJdTXHCZvk51/3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\byron\\source\\repos\\HandsArts\\HandsArtsProyecto\\HandsArts\\HandsArts.csproj",
+  "projectFilePath": "C:\\Users\\byron\\Source\\Repos\\HandsArts\\HandsArtsProyecto\\HandsArts\\HandsArts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\byron\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\byron\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

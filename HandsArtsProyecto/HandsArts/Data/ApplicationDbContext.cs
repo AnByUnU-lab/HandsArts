@@ -14,7 +14,8 @@ namespace HandsArts.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Tienda> Tiendas { get; set; }
         public DbSet<TiendaCategory> TiendasCategories { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -1,0 +1,102 @@
+﻿@model HandsArts.ViewModels.EmpresaVM;
+
+@{
+    ViewData["Title"] = "Registro de Empresa";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="RegistroEmpresa" method="post">
+    <div class="form-group">
+        <label asp-for="RutEmpresa" class="control-label"></label>
+        <input asp-for="RutEmpresa" class="form-control" />
+        <span asp-validation-for="RutEmpresa" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NombreEmpresa" class="control-label"></label>
+        <input asp-for="NombreEmpresa" class="form-control" />
+        <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RazonSocial" class="control-label"></label>
+        <input asp-for="RazonSocial" class="form-control" />
+        <span asp-validation-for="RazonSocial" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GiroComercial" class="control-label"></label>
+        <input asp-for="GiroComercial" class="form-control" />
+        <span asp-validation-for="GiroComercial" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rubro" class="control-label"></label>
+        <input asp-for="Rubro" class="form-control" />
+        <span asp-validation-for="Rubro" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PoliticaDevoluciones" class="control-label"></label>
+        <textarea asp-for="PoliticaDevoluciones" class="form-control"></textarea>
+        <span asp-validation-for="PoliticaDevoluciones" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SectorGeografico" class="control-label"></label>
+        <input asp-for="SectorGeografico" class="form-control" />
+        <span asp-validation-for="SectorGeografico" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NumeroRegistroTributario" class="control-label"></label>
+        <input asp-for="NumeroRegistroTributario" class="form-control" />
+        <span asp-validation-for="NumeroRegistroTributario" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ModoEnvioPreferido" class="control-label"></label>
+        <input asp-for="ModoEnvioPreferido" class="form-control" />
+        <span asp-validation-for="ModoEnvioPreferido" class="text-danger"></span>
+    </div>
+
+    <!-- Información del Usuario -->
+    <div class="form-group">
+        <label asp-for="Nombre" class="control-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Apellido" class="control-label"></label>
+        <input asp-for="Apellido" class="form-control" />
+        <span asp-validation-for="Apellido" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Correo" class="control-label"></label>
+        <input asp-for="Correo" class="form-control" />
+        <span asp-validation-for="Correo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Contraseña" class="control-label"></label>
+        <input asp-for="Contraseña" class="form-control" type="password" />
+        <span asp-validation-for="Contraseña" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Telefono" class="control-label"></label>
+        <input asp-for="Telefono" class="form-control" />
+        <span asp-validation-for="Telefono" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Direccion" class="control-label"></label>
+        <input asp-for="Direccion" class="form-control" />
+        <span asp-validation-for="Direccion" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
