@@ -69,6 +69,11 @@ namespace HandsArts.Controllers
             // Si el modelo no es válido, vuelve a mostrar el formulario con los errores
             return View(model);
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
+
     }
 }
 

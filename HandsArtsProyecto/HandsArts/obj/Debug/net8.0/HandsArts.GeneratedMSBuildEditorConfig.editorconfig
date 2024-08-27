@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\byron\source\repos\HandsArts\HandsArtsProyecto\HandsArts
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/byron/source/repos/HandsArts/HandsArtsProyecto/HandsArts/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/byron/source/repos/HandsArts/HandsArtsProyecto/HandsArts/Views/Account/RegistroEmpresa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Ryb0VtcHJlc2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
