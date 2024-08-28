@@ -22,6 +22,7 @@
 [Bb]in/
 [Oo]bj/
 
+<<<<<<< HEAD
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfo.cs
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfoInputs.cache
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.GeneratedMSBuildEditorConfig.editorconfig
@@ -45,3 +46,5 @@
 >>>>>>> ignorar metadata
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/project.razor.vs.bin
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.assets.cache
+=======
+>>>>>>> Revert "ignore"
