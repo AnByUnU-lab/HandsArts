@@ -8,10 +8,12 @@ namespace HandsArts.Models
         public string NombreEmpresa { get; set; }
         public string RazonSocial { get; set; }
         public string GiroComercial { get; set; }
-        public string Rubro { get; set; }
-        public int? IDTienda { get; set; } // foreing key FK de tienda asociada
+        public int RubroId { get; set; } // Foreing Key de rubro asociado a usaurio
+        public Rubro Rubro { get; set; } 
+        public int? TiendaId { get; set; } // foreing key FK de tienda asociada
+        public Tienda Tienda { get; set; }
         public string PoliticaDevoluciones { get; set; }
-        public string SectorGeografico { get; set; }
+        public string DirecciónComercial { get; set; }
         public string NumeroRegistroTributario { get; set; }
         public string ModoEnvioPreferido { get; set; }
         public bool EstadoVerificacion { get; set; }
