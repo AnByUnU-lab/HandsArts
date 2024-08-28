@@ -22,6 +22,7 @@
 [Oo]bj/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfo.cs
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfoInputs.cache
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.GeneratedMSBuildEditorConfig.editorconfig
@@ -33,10 +34,13 @@
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.csproj.AssemblyReference.cache
 /HandsArtsProyecto/HandsArts/obj/Release/net8.0/HandsArts.GeneratedMSBuildEditorConfig.editorconfig
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfoInputs.cache
+=======
+>>>>>>> origin/main
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfo.cs
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfoInputs.cache
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfoInputs.cache
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfo.cs
+<<<<<<< HEAD
 =======
 /HandsArtsProyecto/.vs/ProjectEvaluation/handsartsproyecto.metadata.v7.bin
 /HandsArtsProyecto/.vs/ProjectEvaluation/handsartsproyecto.projects.v7.bin
@@ -62,3 +66,10 @@
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.sourcelink.json
 /HandsArtsProyecto/HandsArts/bin/Debug/net8.0/HandsArts.staticwebassets.runtime.json
 /HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.GeneratedMSBuildEditorConfig.editorconfig
+=======
+/HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfoInputs.cache
+/HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfo.cs
+>>>>>>> origin/main
+/HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.sourcelink.json
+/HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.GeneratedMSBuildEditorConfig.editorconfig
+/HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.csproj.CoreCompileInputs.cache
