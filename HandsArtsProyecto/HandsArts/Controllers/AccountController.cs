@@ -51,7 +51,8 @@ namespace HandsArts.Controllers
                     NumeroRegistroTributario = model.NumeroRegistroTributario,
                     ModoEnvioPreferido = model.ModoEnvioPreferido,
                     Nombre = model.Nombre,
-                    Apellido = model.Apellido,
+                    //ApellidoPaterno=model.ApellidoPaterno,
+                    //ApellidoMaterno = model.ApellidoMaterno,
                     Correo = model.Correo,
                     Contraseña = model.Contraseña, // En producción, asegúrate de encriptar la contraseña
                     Telefono = model.Telefono,
@@ -73,7 +74,14 @@ namespace HandsArts.Controllers
         {
             return View();
         }
-
+        public IActionResult TipoRegistro()
+        {
+            return View();
+        }
+        public IActionResult RegistroComprador()
+        {
+            return View();
+        }
     }
 }
 

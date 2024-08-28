@@ -22,8 +22,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Andrea/Source/Repos/AnByUnU-lab/HandsArts/HandsArtsProyecto/HandsArts/Views/Account/RegistroComprador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Ryb0NvbXByYWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Andrea/Source/Repos/AnByUnU-lab/HandsArts/HandsArtsProyecto/HandsArts/Views/Account/RegistroEmpresa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Ryb0VtcHJlc2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Andrea/Source/Repos/AnByUnU-lab/HandsArts/HandsArtsProyecto/HandsArts/Views/Account/TipoRegistro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUaXBvUmVnaXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Andrea/Source/Repos/AnByUnU-lab/HandsArts/HandsArtsProyecto/HandsArts/Views/Home/Index.cshtml]

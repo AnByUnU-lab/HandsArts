@@ -5,7 +5,8 @@ namespace HandsArts.Models
     public abstract class Usuario
     {
         public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string ApellidoPaterno { get; set; }
+        public string ApellidoMaterno { get; set; }
         public string Correo { get; set; }
         public string Contraseña { get; set; }
         public string Telefono { get; set; }
