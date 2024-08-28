@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HandsArts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c2f644640f945b6b05d17a400e4862805cfbfea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcda97a45506da303fe4c02118e43a09aea13a29")]
 [assembly: System.Reflection.AssemblyProductAttribute("HandsArts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HandsArts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
