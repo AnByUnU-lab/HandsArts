@@ -11,8 +11,18 @@
 using System;
 using System.Reflection;
 
+<<<<<<< HEAD:HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.RazorAssemblyInfo.cs
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute("Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFact" +
     "ory, Microsoft.AspNetCore.Mvc.Razor")]
+=======
+[assembly: System.Reflection.AssemblyCompanyAttribute("HandsArts")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c2f644640f945b6b05d17a400e4862805cfbfea")]
+[assembly: System.Reflection.AssemblyProductAttribute("HandsArts")]
+[assembly: System.Reflection.AssemblyTitleAttribute("HandsArts")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+>>>>>>> Cambios:HandsArtsProyecto/HandsArts/obj/Debug/net8.0/HandsArts.AssemblyInfo.cs
 
 // Generado por la clase WriteCodeFragment de MSBuild.
 
