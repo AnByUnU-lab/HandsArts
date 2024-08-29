@@ -17,35 +17,38 @@ namespace HandsArts.ViewModels
             public string GiroComercial { get; set; }
 
             [Required]
-            public string Rubro { get; set; }
+            public int RubroId { get; set; }
 
             [Required]
             public string PoliticaDevoluciones { get; set; }
 
             [Required]
-            public string SectorGeografico { get; set; }
+            public string DirecciónComercial { get; set; }
 
             [Required]
             public string NumeroRegistroTributario { get; set; }
 
             [Required]
             public string ModoEnvioPreferido { get; set; }
-
+            
             [Required]
             public string Nombre { get; set; }
 
             [Required]
-            public string Apellido { get; set; }
+            public string ApellidoPaterno { get; set; }
+
+            [Required]
+            public string ApellidoMaterno { get; set; }
 
             [Required]
             [EmailAddress]
             public string Correo { get; set; }
+            public string RepetirCorreo { get; set; }
 
             [Required]
             [DataType(DataType.Password)]
             public string Contraseña { get; set; }
             public string RepetirContraseña { get; set; }
-
             public string Telefono { get; set; }
 
             public string Direccion { get; set; }

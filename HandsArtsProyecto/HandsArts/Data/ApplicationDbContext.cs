@@ -12,8 +12,9 @@ namespace HandsArts.Data
         {
         }
 
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<ModoEnvioPreferido> ModoEnvioPreferidos { get; set; }
         public DbSet<Tienda> Tiendas { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public DbSet<TiendaCategory> TiendasCategories { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Rubro> Rubros { get; set; }

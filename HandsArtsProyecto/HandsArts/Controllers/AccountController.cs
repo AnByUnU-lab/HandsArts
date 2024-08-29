@@ -2,6 +2,7 @@
 using HandsArts.Models;
 using HandsArts.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace HandsArts.Controllers
@@ -20,7 +21,26 @@ namespace HandsArts.Controllers
         [HttpGet]
         public IActionResult RegistroEmpresa()
         {
-            return View();
+            var optionsModel = new RubroOptionsVM
+            {
+                Rubro = _context.Rubros.Select(rt => new SelectListItem
+                {
+                    Value = rt.Nombre,
+                    Text = rt.Nombre
+                }).ToList(),
+
+                ModoEnvioPreferido = _context.ModoEnvioPreferidos.Select(c => new SelectListItem
+                {
+                    Value = c.IdMEP.ToString(),
+                    Text = c.NombreEnvio
+                }).ToList()
+            };
+
+            var viewModel = new Empresa();
+
+            ViewBag.Options = optionsModel; // Pasar las opciones al ViewBag
+
+            return View(viewModel);
         }
 
         [HttpPost]
@@ -49,7 +69,7 @@ namespace HandsArts.Controllers
                     //PoliticaDevoluciones = model.PoliticaDevoluciones,
                     //SectorGeografico = model.SectorGeografico,
                     NumeroRegistroTributario = model.NumeroRegistroTributario,
-                    ModoEnvioPreferido = model.ModoEnvioPreferido,
+                    //ModoEnvioPreferido = model.ModoEnvioPreferido,
                     Nombre = model.Nombre,
                     //ApellidoPaterno=model.ApellidoPaterno,
                     //ApellidoMaterno = model.ApellidoMaterno,
