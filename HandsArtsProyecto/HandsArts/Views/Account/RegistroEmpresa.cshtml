@@ -1,102 +1,124 @@
 ﻿@model HandsArts.ViewModels.EmpresaVM;
 
 @{
-    ViewData["Title"] = "Registro de Empresa";
+    var options = ViewBag.Options as HandsArts.ViewModels.RubroOptionsVM;
 }
 
-<h2>@ViewData["Title"]</h2>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4 class="card-title">Registro de Empresa</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="RegistroEmpresa" method="post">
+                        <!-- Información de la Empresa -->
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="NombreEmpresa" class="form-control" placeholder="Nombre Empresa" />
+                                <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="RutEmpresa" class="form-control" placeholder="Rut Empresa" />
+                                <span asp-validation-for="RutEmpresa" class="text-danger"></span>
+                            </div>
+                        </div>
 
-<form asp-action="RegistroEmpresa" method="post">
-    <div class="form-group">
-        <label asp-for="RutEmpresa" class="control-label"></label>
-        <input asp-for="RutEmpresa" class="form-control" />
-        <span asp-validation-for="RutEmpresa" class="text-danger"></span>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="RazonSocial" class="form-control" placeholder="Razón Social" />
+                                <span asp-validation-for="RazonSocial" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="GiroComercial" class="form-control" placeholder="Giro Comercial" />
+                                <span asp-validation-for="GiroComercial" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6 form-group mb-3">
+                                <select asp-for="RubroId" class="form-control">
+                                    @foreach(var item in options.Rubro){
+                                        <option value="@item.Value">@item.Text</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="RubroId" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                                <select asp-for="ModoEnvioPreferido" class="form-control">
+                                    @foreach (var item in options.ModoEnvioPreferido)
+                                    {
+                                        <option value="@item.Value">@item.Text</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="ModoEnvioPreferido" class="text-danger"></span>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="DirecciónComercial" class="form-control" placeholder="Dirección Comercial" />
+                                <span asp-validation-for="DirecciónComercial" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="NumeroRegistroTributario" class="form-control" placeholder="Número de Registro Tributario" />
+                                <span asp-validation-for="NumeroRegistroTributario" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input asp-for="PoliticaDevoluciones" class="form-control" placeholder="Política de Devoluciones"></input>
+                            <span asp-validation-for="PoliticaDevoluciones" class="text-danger"></span>
+                        </div>
+                        <!-- Información del Usuario -->
+                            <div class="form-group mb-3">
+                                <input asp-for="Nombre" class="form-control" placeholder="Nombre" />
+                                <span asp-validation-for="Nombre" class="text-danger"></span>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="ApellidoMaterno" class="form-control" placeholder="Apellido Materno" />
+                                <span asp-validation-for="ApellidoMaterno" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="ApellidoPaterno" class="form-control" placeholder="Apellido Paterno" />
+                                <span asp-validation-for="ApellidoPaterno" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="Correo" class="form-control" placeholder="Correo" />
+                                <span asp-validation-for="Correo" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="RepetirCorreo" class="form-control" placeholder="Repetir Correo" />
+                                <span asp-validation-for="RepetirCorreo" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="Contraseña" class="form-control" type="password" placeholder="Contraseña" />
+                                <span asp-validation-for="Contraseña" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="RepetirContraseña" class="form-control" type="password" placeholder="Repetir Contraseña" />
+                                <span asp-validation-for="RepetirContraseña" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="Telefono" class="form-control" placeholder="Teléfono" />
+                                <span asp-validation-for="Telefono" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <input asp-for="Direccion" class="form-control" placeholder="Dirección" />
+                                <span asp-validation-for="Direccion" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="form-group">
-        <label asp-for="NombreEmpresa" class="control-label"></label>
-        <input asp-for="NombreEmpresa" class="form-control" />
-        <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="RazonSocial" class="control-label"></label>
-        <input asp-for="RazonSocial" class="form-control" />
-        <span asp-validation-for="RazonSocial" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="GiroComercial" class="control-label"></label>
-        <input asp-for="GiroComercial" class="form-control" />
-        <span asp-validation-for="GiroComercial" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Rubro" class="control-label"></label>
-        <input asp-for="Rubro" class="form-control" />
-        <span asp-validation-for="Rubro" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="PoliticaDevoluciones" class="control-label"></label>
-        <textarea asp-for="PoliticaDevoluciones" class="form-control"></textarea>
-        <span asp-validation-for="PoliticaDevoluciones" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="SectorGeografico" class="control-label"></label>
-        <input asp-for="SectorGeografico" class="form-control" />
-        <span asp-validation-for="SectorGeografico" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="NumeroRegistroTributario" class="control-label"></label>
-        <input asp-for="NumeroRegistroTributario" class="form-control" />
-        <span asp-validation-for="NumeroRegistroTributario" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="ModoEnvioPreferido" class="control-label"></label>
-        <input asp-for="ModoEnvioPreferido" class="form-control" />
-        <span asp-validation-for="ModoEnvioPreferido" class="text-danger"></span>
-    </div>
-
-    <!-- Información del Usuario -->
-    <div class="form-group">
-        <label asp-for="Nombre" class="control-label"></label>
-        <input asp-for="Nombre" class="form-control" />
-        <span asp-validation-for="Nombre" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Apellido" class="control-label"></label>
-        <input asp-for="Apellido" class="form-control" />
-        <span asp-validation-for="Apellido" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Correo" class="control-label"></label>
-        <input asp-for="Correo" class="form-control" />
-        <span asp-validation-for="Correo" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Contraseña" class="control-label"></label>
-        <input asp-for="Contraseña" class="form-control" type="password" />
-        <span asp-validation-for="Contraseña" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Telefono" class="control-label"></label>
-        <input asp-for="Telefono" class="form-control" />
-        <span asp-validation-for="Telefono" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Direccion" class="control-label"></label>
-        <input asp-for="Direccion" class="form-control" />
-        <span asp-validation-for="Direccion" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Registrar</button>
-</form>
+</div>

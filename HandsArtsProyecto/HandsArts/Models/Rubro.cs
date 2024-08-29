@@ -1,4 +1,6 @@
-﻿namespace HandsArts.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HandsArts.Models
 {
     public class Rubro
     {
